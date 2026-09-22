@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MeR@K — Bilmediğini değil, merak etmediğini keşfet. İlginç bilgilerden Tavşan Deliği'ne uzanan yeni nesil keşif uygulaması.">
+  <meta name="theme-color" content="#090b10">
+  <title>MeR@K — Merak Ettikçe Keşfet</title>
+
+  <!-- Google AdSense / Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3105805763698370" crossorigin="anonymous"></script>
+
+  <style>
+    :root{--bg:#090b10;--panel:#11151d;--text:#f4f6fa;--muted:#9aa5b5;--line:#202735;--accent:#f0c45a;--accent2:#ffdf8b;--max:1180px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    nav{position:sticky;top:0;z-index:20;background:rgba(9,11,16,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:24px;font-weight:900;letter-spacing:-1px}.brand b{color:var(--accent)}
+    .links{display:flex;gap:26px;color:#c5ccd7;font-size:14px}.links a:hover{color:#fff}
+    .hero{min-height:680px;display:grid;place-items:center;overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(240,196,90,.15),transparent 67%);top:-280px;right:-160px}
+    .heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;padding:90px 0}
+    .eyebrow{color:var(--accent);font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:12px}
+    h1{font-size:clamp(48px,7vw,86px);line-height:.98;letter-spacing:-4px;margin:18px 0 24px}.lead{font-size:20px;color:#b8c0cc;max-width:700px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{padding:14px 20px;border-radius:12px;font-weight:800;border:1px solid var(--line);display:inline-block}.primary{background:var(--accent);color:#16130b;border-color:var(--accent)}.secondary:hover{background:#141923}
+    .phone{width:min(330px,85vw);aspect-ratio:9/18.5;border:10px solid #202631;border-radius:44px;background:linear-gradient(160deg,#171c26,#080a0f);margin:auto;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 80px rgba(240,196,90,.08)}
+    .notch{width:90px;height:20px;border-radius:20px;background:#050609;margin:-14px auto 28px}.card{background:#151a23;border:1px solid #262e3b;border-radius:22px;padding:24px;margin-top:18px}.tag{font-size:11px;color:var(--accent);font-weight:800}.card h3{font-size:25px;line-height:1.15;margin:12px 0}.card p{color:#9da7b5;font-size:14px}.rabbit{border-top:1px solid #2a3240;margin-top:22px;padding-top:18px;color:#d8dde6;font-weight:700}
+    section{padding:90px 0;border-top:1px solid rgba(255,255,255,.05)}.sectionHead{max-width:720px;margin-bottom:42px}.sectionHead h2{font-size:42px;letter-spacing:-2px;margin:8px 0}.sectionHead p{color:var(--muted)}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px}.num{color:var(--accent);font-weight:900}.feature h3{font-size:20px}.feature p{color:var(--muted)}
+    .rabbitFlow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{min-height:160px;border:1px solid var(--line);border-radius:16px;padding:22px;background:linear-gradient(145deg,#121720,#0d1016)}.step small{color:var(--accent);font-weight:800}.step strong{display:block;margin-top:12px;font-size:18px}
+    .adspace{margin:38px auto;padding:20px;border:1px dashed #343d4b;border-radius:14px;text-align:center;color:#6f7a89;min-height:90px;display:grid;place-items:center;font-size:12px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about p{color:var(--muted)}
+    .cta{text-align:center;padding:100px 20px;background:radial-gradient(circle at center,rgba(240,196,90,.1),transparent 60%)}.cta h2{font-size:46px;letter-spacing:-2px;margin:0 0 14px}.cta p{color:var(--muted)}
+    footer{padding:40px 0;border-top:1px solid var(--line);color:#8993a2;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:18px;flex-wrap:wrap}
+    @media(max-width:800px){.links{display:none}.heroGrid,.about{grid-template-columns:1fr}.heroGrid{text-align:center}.lead{margin:auto}.actions{justify-content:center}.grid3,.rabbitFlow{grid-template-columns:1fr}.phone{margin-top:20px}h1{letter-spacing:-2px}.heroGrid{padding:60px 0}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap navin">
+    <a class="brand" href="#"><b>MeR@K</b></a>
+    <div class="links">
+      <a href="#nedir">Nedir?</a><a href="#nasil">Nasıl Çalışır?</a><a href="#biz">Biz Kimiz?</a><a href="#indir">Uygulama</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <div class="eyebrow">Bilginin tavşan deliğine hoş geldin</div>
+      <h1>Merak ettikçe<br>derine in.</h1>
+      <p class="lead">MeR@K, kısa ve şaşırtıcı bilgilerden başlayıp bağlantılı konular arasında ilerlemeni sağlayan yeni nesil keşif uygulaması.</p>
+      <div class="actions"><a class="btn primary" href="#indir">MeR@K'ı Keşfet</a><a class="btn secondary" href="#nasil">Nasıl çalışıyor?</a></div>
+    </div>
+    <div class="phone" aria-label="MeR@K uygulama önizlemesi">
+      <div class="notch"></div><div class="tag">#TARİH · #BİLİM · #DÜNYA</div>
+      <div class="card"><div class="tag">BUGÜNÜN MERAKI</div><h3>Bildiklerin, sandığından daha garip olabilir.</h3><p>Bir bilgiyi aç. Detayına in. Sonra seni bekleyen bağlantıyı seç.</p><div class="rabbit">🐇 Tavşan Deliğine Gir →</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="nedir"><div class="wrap">
+  <div class="sectionHead"><div class="eyebrow">MeR@K Nedir?</div><h2>Kaydır, keşfet, bağlantıyı takip et.</h2><p>MeR@K klasik bir bilgi listesi değil. Her bilgi yeni bir soruya, her soru yeni bir keşfe açılır.</p></div>
+  <div class="grid3">
+    <article class="feature"><div class="num">01</div><h3>Kısa ve çarpıcı bilgiler</h3><p>Uzun metinler arasında kaybolmadan önce merakını uyandıran özü gör.</p></article>
+    <article class="feature"><div class="num">02</div><h3>Detaya istediğin kadar in</h3><p>İlgini çeken bilginin arka planını, bağlamını ve bağlantılı konularını keşfet.</p></article>
+    <article class="feature"><div class="num">03</div><h3>Tavşan Deliği</h3><p>Bir konudan diğerine anlamlı bağlantılarla ilerle. Nerede biteceğini merakın belirlesin.</p></article>
+  </div>
+  <div class="adspace">AdSense reklam alanı — site onaylandıktan sonra otomatik reklamlar burada ve uygun alanlarda gösterilebilir.</div>
+</div></section>
+
+<section id="nasil"><div class="wrap">
+  <div class="sectionHead"><div class="eyebrow">Nasıl Çalışır?</div><h2>Bir bilgi, dört yeni kapı.</h2><p>Bir konuyu okuduktan sonra Tavşan Deliği seni onunla gerçekten bağlantılı yeni bilgilere taşır.</p></div>
+  <div class="rabbitFlow">
+    <div class="step"><small>1 · KEŞFET</small><strong>İlgini çeken bilgiyi gör.</strong></div>
+    <div class="step"><small>2 · OKU</small><strong>Detayını ve bağlamını öğren.</strong></div>
+    <div class="step"><small>3 · SEÇ</small><strong>Bağlantılı bir sorunun peşine düş.</strong></div>
+    <div class="step"><small>4 · DERİNE İN</small><strong>Tavşan deliğinin seni nereye götürdüğünü gör.</strong></div>
+  </div>
+</div></section>
+
+<section id="biz"><div class="wrap about">
+  <div><div class="eyebrow">Biz Kimiz?</div><h2>Merakın peşinden giden bir fikir.</h2></div>
+  <div><p>MeR@K, insanların yalnızca bildiklerini değil, henüz merak etmeyi düşünmedikleri şeyleri de keşfetmeleri için geliştirildi.</p><p>Amacımız; tarih, bilim, doğa, insan, teknoloji ve daha birçok alandaki ilginç bilgileri sade, görsel ve bağlantılı bir keşif deneyimine dönüştürmek.</p><p>İletişim: <a href="mailto:appmerak@gmail.com">appmerak@gmail.com</a></p></div>
+</div></section>
+
+<section id="indir" class="cta"><div class="wrap">
+  <div class="eyebrow">Yakında</div><h2>MeR@K cebinde.</h2><p>Android sürümü Google Play'de yayınlanmak üzere hazırlanıyor.</p>
+  <div class="actions" style="justify-content:center"><span class="btn primary">Google Play · Yakında</span></div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot">
+  <div>© 2026 MeR@K · Bilmediğini değil, merak etmediğini keşfet.</div>
+  <div class="footlinks"><a href="privacy.html">Gizlilik Politikası</a><a href="terms.html">Kullanım Koşulları</a><a href="delete-account.html">Hesap Silme</a><a href="mailto:appmerak@gmail.com">İletişim</a></div>
+</div></footer>
+</body>
+</html>
